@@ -1,0 +1,14 @@
+// This file is used to configure typescript files for eslint.
+// It is not used to compile the actual typescript project.
+// This is necessary because we still want to use es-lints type-aware linting on files
+// that will not get compiled as part of our normal project (e.g. tests).
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src/**/*",
+    "src/**/*.d.ts",
+    "tests/**/*",
+    "config-overrides.js"
+  ],
+  "exclude": ["node_modules", "build"]
+}
